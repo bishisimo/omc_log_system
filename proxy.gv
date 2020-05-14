@@ -1,0 +1,115 @@
+digraph gocallvis {
+    label="git/omc_log_system";
+    labeljust="l";
+    fontname="Arial";
+    fontsize="14";
+    rankdir="LR";
+    bgcolor="lightgray";
+    style="solid";
+    penwidth="0.5";
+    pad="0.0";
+    nodesep="0.35";
+
+    node [shape="ellipse" style="filled" fillcolor="honeydew" fontname="Verdana" penwidth="1.0" margin="0.05,0.0"];
+    edge [minlen="2"]
+
+    subgraph "cluster_focus" {
+        labelloc="t";
+labeljust="c";
+fontsize="18";
+bgcolor="#e6ecfa";
+label="proxy";
+        
+        "(*sync.Map).Range" [ label="sync\n(*Map).Range" penwidth="1.5" fillcolor="#adedad" ]
+        "git/omc_log_system/proxy.creatRouter$6$1" [ fillcolor="lightblue" label="creatRouter$6$1" style="dotted,filled" ]
+        "git/omc_log_system/proxy.creatRouter$6$2" [ fillcolor="lightblue" label="creatRouter$6$2" style="dotted,filled" ]
+        "(git/omc_log_system/core.SubOption).GetInfo" [ fillcolor="moccasin" label="core\n(SubOption).GetInfo" penwidth="1.5" ]
+        "git/omc_log_system/proxy.creatRouter$6$3" [ style="dotted,filled" fillcolor="lightblue" label="creatRouter$6$3" ]
+        "git/omc_log_system/proxy.creatRouter$7$1" [ label="creatRouter$7$1" style="dotted,filled" fillcolor="lightblue" ]
+        "git/omc_log_system/proxy.creatRouter$8$1" [ label="creatRouter$8$1" style="dotted,filled" fillcolor="lightblue" ]
+        "git/omc_log_system/proxy.creatRouter$9$1" [ fillcolor="lightblue" label="creatRouter$9$1" style="dotted,filled" ]
+        "git/omc_log_system/proxy.creatRouter$3" [ fillcolor="lightblue" label="creatRouter$3" style="dotted,filled" ]
+        "(*github.com/gin-gonic/gin.Context).Param" [ label="gin\n(*Context).Param" penwidth="1.5" fillcolor="moccasin" ]
+        "(*git/omc_log_system/core.redux).RemovePub" [ label="core\n(*redux).RemovePub" penwidth="1.5" fillcolor="moccasin" ]
+        "(*github.com/gin-gonic/gin.Context).String" [ fillcolor="moccasin" label="gin\n(*Context).String" penwidth="1.5" ]
+        "git/omc_log_system/proxy.creatRouter$1" [ fillcolor="lightblue" label="creatRouter$1" style="dotted,filled" ]
+        "(*git/omc_log_system/core.redux).AddPub" [ fillcolor="moccasin" label="core\n(*redux).AddPub" penwidth="1.5" ]
+        "(*github.com/gin-gonic/gin.Context).Next" [ label="gin\n(*Context).Next" penwidth="1.5" fillcolor="moccasin" ]
+        "git/omc_log_system/proxy.creatRouter$2" [ fillcolor="lightblue" label="creatRouter$2" style="dotted,filled" ]
+        "git/omc_log_system/core.NewSubOption" [ fillcolor="moccasin" label="core\nNewSubOption" penwidth="1.5" ]
+        "(*github.com/gin-gonic/gin.Context).BindJSON" [ fillcolor="moccasin" label="gin\n(*Context).BindJSON" penwidth="1.5" ]
+        "(*git/omc_log_system/core.SubOption).IsInfoRight" [ label="core\n(*SubOption).IsInfoRight" penwidth="1.5" fillcolor="moccasin" ]
+        "(*git/omc_log_system/core.redux).AddSub" [ fillcolor="moccasin" label="core\n(*redux).AddSub" penwidth="1.5" ]
+        "git/omc_log_system/proxy.creatRouter$4" [ style="dotted,filled" fillcolor="lightblue" label="creatRouter$4" ]
+        "(*git/omc_log_system/core.redux).RemoveSub" [ label="core\n(*redux).RemoveSub" penwidth="1.5" fillcolor="moccasin" ]
+        "git/omc_log_system/proxy.creatRouter$5" [ fillcolor="lightblue" label="creatRouter$5" style="dotted,filled" ]
+        "(*sync.Map).Load" [ fillcolor="#adedad" label="sync\n(*Map).Load" penwidth="1.5" ]
+        "git/omc_log_system/proxy.creatRouter$6" [ fillcolor="lightblue" label="creatRouter$6" style="dotted,filled" ]
+        "(*github.com/gin-gonic/gin.Context).JSON" [ fillcolor="moccasin" label="gin\n(*Context).JSON" penwidth="1.5" ]
+        "git/omc_log_system/proxy.creatRouter$7" [ fillcolor="lightblue" label="creatRouter$7" style="dotted,filled" ]
+        "git/omc_log_system/proxy.creatRouter$8" [ fillcolor="lightblue" label="creatRouter$8" style="dotted,filled" ]
+        "git/omc_log_system/proxy.creatRouter$9" [ fillcolor="lightblue" label="creatRouter$9" style="dotted,filled" ]
+        "git/omc_log_system/proxy.creatRouter" [ label="creatRouter" penwidth="0.5" fillcolor="lightblue" ]
+        "(*github.com/gin-gonic/gin.RouterGroup).Group" [ fillcolor="moccasin" label="gin\n(*RouterGroup).Group" penwidth="1.5" ]
+        "(*github.com/gin-gonic/gin.RouterGroup).POST" [ fillcolor="moccasin" label="gin\n(*RouterGroup).POST" penwidth="1.5" ]
+        "(*github.com/gin-gonic/gin.RouterGroup).GET" [ label="gin\n(*RouterGroup).GET" penwidth="1.5" fillcolor="moccasin" ]
+        "git/omc_log_system/proxy.CreateProxy" [ fillcolor="lightblue" label="CreateProxy" penwidth="1.5" ]
+        "github.com/gin-gonic/gin.Default" [ label="gin\nDefault" penwidth="1.5" fillcolor="moccasin" ]
+        "fmt.Sprintf" [ penwidth="1.5" fillcolor="#adedad" label="fmt\nSprintf" ]
+        "(*github.com/gin-gonic/gin.Engine).Run" [ fillcolor="moccasin" label="gin\n(*Engine).Run" penwidth="1.5" ]
+        "git/omc_log_system.main" [ fillcolor="moccasin" label="main\nmain" penwidth="0.5" ]
+        
+    }
+
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$6$1" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$6$2" -> "(git/omc_log_system/core.SubOption).GetInfo" [ color="saddlebrown" ]
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$6$2" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$6$3" -> "(git/omc_log_system/core.SubOption).GetInfo" [ color="saddlebrown" ]
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$6$3" [ style="dashed" color="saddlebrown" ]
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$7$1" [ style="dashed" color="saddlebrown" ]
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$8$1" [ style="dashed" color="saddlebrown" ]
+    "(*sync.Map).Range" -> "git/omc_log_system/proxy.creatRouter$9$1" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$3" -> "(*github.com/gin-gonic/gin.Context).Param" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$3" -> "(*git/omc_log_system/core.redux).RemovePub" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$3" -> "(*github.com/gin-gonic/gin.Context).String" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$1" -> "(*github.com/gin-gonic/gin.Context).Param" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$1" -> "(*git/omc_log_system/core.redux).AddPub" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$1" -> "(*github.com/gin-gonic/gin.Context).String" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$1" [ color="saddlebrown" style="dashed" ]
+    "git/omc_log_system/proxy.creatRouter$2" -> "git/omc_log_system/core.NewSubOption" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$2" -> "(*github.com/gin-gonic/gin.Context).BindJSON" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$2" -> "(*github.com/gin-gonic/gin.Context).String" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$2" -> "(*git/omc_log_system/core.SubOption).IsInfoRight" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$2" -> "(*git/omc_log_system/core.redux).AddSub" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$2" [ style="dashed" color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$3" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$4" -> "(*github.com/gin-gonic/gin.Context).Param" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$4" -> "(*git/omc_log_system/core.redux).RemoveSub" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$4" -> "(*github.com/gin-gonic/gin.Context).String" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$4" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$5" -> "(*github.com/gin-gonic/gin.Context).Param" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$5" -> "(*sync.Map).Load" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$5" -> "(*github.com/gin-gonic/gin.Context).BindJSON" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$5" -> "(*github.com/gin-gonic/gin.Context).String" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$5" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$6" -> "(*sync.Map).Range" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$6" -> "(*github.com/gin-gonic/gin.Context).JSON" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$6" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$7" -> "(*sync.Map).Range" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$7" -> "(*github.com/gin-gonic/gin.Context).JSON" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$7" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$8" -> "(*sync.Map).Range" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$8" -> "(*github.com/gin-gonic/gin.Context).JSON" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$8" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$9" -> "(*sync.Map).Range" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter$9" -> "(*github.com/gin-gonic/gin.Context).JSON" [ color="saddlebrown" ]
+    "(*github.com/gin-gonic/gin.Context).Next" -> "git/omc_log_system/proxy.creatRouter$9" [ style="dashed" color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter" -> "(*github.com/gin-gonic/gin.RouterGroup).Group" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter" -> "(*github.com/gin-gonic/gin.RouterGroup).POST" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.creatRouter" -> "(*github.com/gin-gonic/gin.RouterGroup).GET" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.CreateProxy" -> "github.com/gin-gonic/gin.Default" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.CreateProxy" -> "git/omc_log_system/proxy.creatRouter" [  ]
+    "git/omc_log_system/proxy.CreateProxy" -> "fmt.Sprintf" [ color="saddlebrown" ]
+    "git/omc_log_system/proxy.CreateProxy" -> "(*github.com/gin-gonic/gin.Engine).Run" [ color="saddlebrown" ]
+    "git/omc_log_system.main" -> "git/omc_log_system/proxy.CreateProxy" [ color="saddlebrown" ]
+}
